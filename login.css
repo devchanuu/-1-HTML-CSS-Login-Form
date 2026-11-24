@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    height: 100vh;
+    height: auto;
 
     display: flex;
     justify-content: center;
@@ -308,4 +308,45 @@ body {
         min-height: 260px;
         max-height: 300px;
     }
+}
+
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
 }
